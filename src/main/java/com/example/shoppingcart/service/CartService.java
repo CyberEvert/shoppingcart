@@ -40,9 +40,8 @@ public class CartService {
 
             total += product.calculateTotal();
         }
-        System.out.println("Scheduler total: " + (total * calculateTaxRate()));
 
-        return total * calculateTaxRate();
+        return total;
     }
     public double calculateTaxRate(){
         return 1 + TAX_RATE / 100;
